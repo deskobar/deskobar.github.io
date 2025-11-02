@@ -77,6 +77,7 @@
             color: #4a5568;
             margin-bottom: 40px;
             line-height: 1.8;
+            text-align: left;
         }
 
         .links {
@@ -84,6 +85,7 @@
             gap: 15px;
             justify-content: center;
             flex-wrap: wrap;
+            margin-bottom: 50px;
         }
 
         .btn {
@@ -114,6 +116,115 @@
             background: #f7fafc;
         }
 
+        /* Experience Section */
+        .experience, .education, .awards {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .experience h2, .education h2, .awards h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #2d3748;
+            text-align: left;
+        }
+
+        .job {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .job:last-child {
+            border-bottom: none;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .job h3 {
+            font-size: 1.3rem;
+            color: #2d3748;
+            margin: 0;
+        }
+
+        .period {
+            font-size: 0.9rem;
+            color: #718096;
+            font-weight: 600;
+        }
+
+        .company {
+            color: #667eea;
+            margin-bottom: 12px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .company a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .company a:hover {
+            color: #764ba2;
+        }
+
+        .job ul, .experience ul {
+            text-align: left;
+            margin-left: 20px;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .job ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Education & Certifications */
+        .edu-item, .cert-item {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .edu-item h3, .cert-item h3 {
+            font-size: 1.2rem;
+            color: #2d3748;
+            margin-bottom: 5px;
+        }
+
+        /* Awards */
+        .award-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #f7fafc;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .award-name {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .award-org {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        /* Skills Section */
         .skills {
             margin-top: 50px;
             padding-top: 40px;
@@ -121,15 +232,27 @@
         }
 
         .skills h2 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
             color: #2d3748;
+            text-align: left;
+        }
+
+        .skill-category {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .skill-category h4 {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
 
         .skill-tags {
             display: flex;
             gap: 10px;
-            justify-content: center;
             flex-wrap: wrap;
         }
 
@@ -140,6 +263,115 @@
             font-size: 0.9rem;
             color: #4a5568;
             font-weight: 500;
+        }
+
+        .projects {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .projects h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #2d3748;
+            text-align: center;
+        }
+
+        .section-intro {
+            text-align: center;
+            color: #718096;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            background: #f7fafc;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .project-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .project-header h3 {
+            font-size: 1.4rem;
+            color: #2d3748;
+            margin: 0;
+            flex: 1;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .project-link {
+            padding: 6px 16px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .project-description {
+            color: #4a5568;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .project-tech {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        .project-tech strong {
+            color: #667eea;
+        }
+
+        .project-features {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .feature-tag {
+            padding: 6px 14px;
+            background: white;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: #4a5568;
+            font-weight: 500;
+            border: 1px solid #e2e8f0;
         }
 
         @media (max-width: 600px) {
@@ -154,40 +386,260 @@
             .subtitle {
                 font-size: 1rem;
             }
+
+            .project-header {
+                flex-direction: column;
+            }
+
+            .project-links {
+                width: 100%;
+            }
+
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .award-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .links {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="avatar">DE</div>
-        <h1>David Escobar</h1>
-        <p class="subtitle">Developer & Tech Enthusiast</p>
+        <h1>David Escobar Rojas</h1>
+        <p class="subtitle">DevOps Engineer & Software Engineer</p>
         <p class="description">
-            Welcome to my corner of the internet! I'm passionate about building amazing things with code.
-            This space showcases my projects, ideas, and journey in the world of technology.
+            Computer Science Engineer with 4+ years of experience in software engineering, DevOps, and machine learning 
+            for fintech and technology companies. Skilled in full-stack development (Python, JavaScript, TypeScript), 
+            cloud platforms (AWS, GCP), CI/CD automation, and Infrastructure as Code (Terraform, Docker). 
+            Proven ability to deliver scalable solutions and manage projects from concept to production.
         </p>
         
         <div class="links">
             <a href="https://github.com/deskobar" class="btn" target="_blank">
                 <span>GitHub</span>
             </a>
-            <a href="#" class="btn btn-secondary">
-                <span>Portfolio</span>
+            <a href="https://www.linkedin.com/in/david-escobar-rojas/" class="btn" target="_blank">
+                <span>LinkedIn</span>
             </a>
-            <a href="#" class="btn btn-secondary">
+            <a href="mailto:david.escobar.rojas@gmail.com" class="btn btn-secondary">
                 <span>Contact</span>
+            </a>
+            <a href="https://github.com/deskobar/cv/releases/latest" class="btn btn-secondary" target="_blank">
+                <span>Download CV</span>
             </a>
         </div>
 
+        <div class="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3>DevOps Engineer</h3>
+                    <span class="period">Jul 2025 - Present</span>
+                </div>
+                <p class="company">
+                    <a href="https://xpendit.com/" target="_blank">Xpendit</a> · Santiago, Chile
+                </p>
+                <ul>
+                    <li>Automated AWS and GCP infrastructure using CI/CD pipelines (GitHub Actions, Terraform), reducing deployment time and errors</li>
+                    <li>Maintained 99.9% uptime while scaling user capacity 2x</li>
+                    <li>Configured New Relic monitoring and alerting, improving incident response by 30%</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Software Engineer</h3>
+                    <span class="period">Sep 2024 - Jul 2025</span>
+                </div>
+                <p class="company">
+                    <a href="https://xpendit.com/" target="_blank">Xpendit</a> · Santiago, Chile
+                </p>
+                <ul>
+                    <li>Migrated legacy infrastructure to Terraform-based IaC in under 3 weeks</li>
+                    <li>Delivered client-facing features that contributed to new contract acquisition</li>
+                    <li>Reduced bug resolution times by 40% through direct engineering support</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Machine Learning Engineer</h3>
+                    <span class="period">Jun 2024 - Aug 2024</span>
+                </div>
+                <p class="company">
+                    <a href="https://www.unholster.com/" target="_blank">Unholster</a> · Santiago, Chile
+                </p>
+                <ul>
+                    <li>Integrated LLMs and NLP pipelines to automate tasks, reducing manual work by 60%</li>
+                    <li>Developed internal ML workflow tooling similar to Model Context Protocol</li>
+                    <li>Optimized LLM pipeline performance by 35% using scalable architecture</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Technical Lead</h3>
+                    <span class="period">Mar 2024 - Aug 2024</span>
+                </div>
+                <p class="company">
+                    <a href="https://www.unholster.com/" target="_blank">Unholster</a> · Santiago, Chile
+                </p>
+                <ul>
+                    <li>Led 3 engineers and collaborated with product, design, and sales teams</li>
+                    <li>Delivered MVP in 6 weeks, on time and within budget</li>
+                    <li>Mentored junior staff, improving delivery speed and code quality</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Software Engineer</h3>
+                    <span class="period">Jan 2022 - Aug 2024</span>
+                </div>
+                <p class="company">
+                    <a href="https://www.unholster.com/" target="_blank">Unholster</a> · Santiago, Chile
+                </p>
+                <ul>
+                    <li>Developed and maintained 8+ web applications</li>
+                    <li>Built high-availability AWS platforms supporting 1M+ users</li>
+                    <li>Deployed zero-downtime infrastructure with AWS best practices</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="education">
+            <h2>Education & Certifications</h2>
+            <div class="edu-item">
+                <h3>Computer Science Engineering</h3>
+                <p class="company">University of Chile · 2016 - 2022</p>
+            </div>
+            <div class="cert-item">
+                <h3>HashiCorp Certified: Terraform Associate</h3>
+                <p class="company">
+                    2024 · 
+                    <a href="https://www.credly.com/badges/c0b40414-9972-456b-9878-b162cf4bccf3" target="_blank">View Certificate</a>
+                </p>
+            </div>
+        </div>
+
         <div class="skills">
-            <h2>Skills & Interests</h2>
-            <div class="skill-tags">
-                <span class="tag">JavaScript</span>
-                <span class="tag">Python</span>
-                <span class="tag">Web Development</span>
-                <span class="tag">UI/UX</span>
-                <span class="tag">Open Source</span>
-                <span class="tag">Cloud Computing</span>
+            <h2>Technical Skills</h2>
+            <div class="skill-category">
+                <h4>Languages</h4>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Git</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Technologies</h4>
+                <div class="skill-tags">
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Django</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">LlamaIndex</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">GCP</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Terraform</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Tools</h4>
+                <div class="skill-tags">
+                    <span class="tag">GitHub Actions</span>
+                    <span class="tag">Google Cloud Build</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">ElasticSearch</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">New Relic</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="awards">
+            <h2>Awards & Recognition</h2>
+            <div class="award-item">
+                <span class="award-name">🏆 Peer Award</span>
+                <span class="award-org">Xpendit · 2024</span>
+            </div>
+            <div class="award-item">
+                <span class="award-name">⭐ Top Performer</span>
+                <span class="award-org">Unholster · 2023-2024</span>
+            </div>
+        </div>
+
+        <div class="projects" id="projects">
+            <h2>Personal Projects</h2>
+            <p class="section-intro">Hobby projects built in my free time to explore new technologies and solve interesting problems.</p>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>⚽ Agenda Fútbol Bot</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/deskobar/agenda-futbol-telegram-bot" target="_blank" class="project-link">Bot</a>
+                        <a href="https://github.com/deskobar/agenda-futbol-telegram-api" target="_blank" class="project-link">API</a>
+                        <a href="https://t.me/AgendaFutbolBot" target="_blank" class="project-link">Try it!</a>
+                    </div>
+                </div>
+                <p class="project-description">
+                    A Telegram bot that helps you save time by querying football matches of the day without having to visit your favorite website directly. 
+                    Supports filtering by keywords and dates for quick searches.
+                </p>
+                <p class="project-tech">
+                    <strong>Tech Stack:</strong> Python • FastAPI • GraphQL • SQLAlchemy • Aurora Serverless PostgreSQL • Telegram Bot API
+                </p>
+                <div class="project-features">
+                    <span class="feature-tag">📅 Date filtering</span>
+                    <span class="feature-tag">🔍 Keyword search</span>
+                    <span class="feature-tag">⚡ Team aliases</span>
+                    <span class="feature-tag">🌐 GraphQL API</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>💰 Gastum - Personal Budget Manager</h3>
+                    <div class="project-links">
+                        <a href="https://gastum.vercel.app/" target="_blank" class="project-link">Try it!</a>
+                    </div>
+                </div>
+                <p class="project-description">
+                    A modern full-stack financial management application that helps users manage their finances by uploading bank statements, 
+                    automatically categorizing transactions, and providing detailed analytics with interactive charts.
+                </p>
+                <p class="project-tech">
+                    <strong>Tech Stack:</strong> FastAPI • Next.js 14 • TypeScript • PostgreSQL • SQLAlchemy • TailwindCSS • shadcn/ui • TanStack Query • Recharts
+                </p>
+                <div class="project-features">
+                    <span class="feature-tag">📊 Financial Analytics</span>
+                    <span class="feature-tag">📁 File Upload</span>
+                    <span class="feature-tag">🏷️ Auto Categorization</span>
+                    <span class="feature-tag">📈 Interactive Charts</span>
+                    <span class="feature-tag">🔐 JWT Auth</span>
+                    <span class="feature-tag">🎨 Modern UI</span>
+                </div>
             </div>
         </div>
     </div>
